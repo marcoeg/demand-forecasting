@@ -37,4 +37,7 @@ Change the notebook code below accordingly:
 ```
 train_data = spark_read_csv(sc, name = "train_data",  path = "/Volumes/industry_solutions/esg_scoring/data/train.csv")
 ```
+### AutoML auto-generated notebook
+The auto-generated DataBricks notebook with the best AutoML model is in the file [AutoML-24-04-30-16_08-Prophet.dbc](AutoML-24-04-30-16_08-Prophet.dbc)
 
+With this file is possible to re-run the experiment on forecasting 500 time series and see the results.
