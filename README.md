@@ -27,6 +27,14 @@ Read the comments for step-by-step execution of the forecast and plotting.
 ## Forecasting in DataBricks
 The DataBricks notebook for forecasting at scale is in the file [OE_Demand_Forecasting.dbc](OE_Demand_Forecasting.dbc).
 
-A Spark cluster of 8 workers is recommended.
 
 >500 forecasts are generated in the notebook.
+
+### read the training file into a Spark DataFrame
+Upload the `./dataset/train.csv` file to the catalog as a new table using the `Data Ingestion` of the DataBricks main interface.
+
+Change the notebook code below accordingly:
+```
+train_data = spark_read_csv(sc, name = "train_data",  path = "/Volumes/industry_solutions/esg_scoring/data/train.csv")
+```
+
